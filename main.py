@@ -7,7 +7,12 @@ from flask import request
 app = Flask(__name__)
 Bootstrap(app)
 
+
+# openai.api_key = os.getenv("API_KEY")
+# print(openai.api_key)
 openai.api_key = os.getenv("API_KEY")
+print(openai.api_key)
+
 chat_log = []
 
 def call_chatgpt_api(condition, severity):
@@ -65,4 +70,4 @@ def further():
 
     return render_template('output.html', chat_log=chat_log)
 
-app.run(debug=True)
+# app.run(debug=True)

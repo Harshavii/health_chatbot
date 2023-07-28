@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run-flask-app",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "main.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0",
+                "API_KEY": "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"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+    ]
+}
