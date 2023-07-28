@@ -70,4 +70,4 @@ def further():
 
     return render_template('output.html', chat_log=chat_log)
 
-# app.run(debug=True)
+app.run(debug=True)
